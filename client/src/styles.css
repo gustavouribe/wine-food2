@@ -1,0 +1,402 @@
+/* ///////////wrapper */
+
+
+body {
+    background-color: white;
+    margin: 0;
+    background-image: url("assets/images/annie-spratt-370973-unsplash.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    width:100%;
+    height: 100%;
+ }
+ 
+
+.contentWrapper {
+    min-height: 400px;
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* ///////////header */
+.header{
+    display: flex;
+    justify-content: left;
+    /* font-size: 4em; */
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    
+}
+.headerTitle{
+    border: 3px solid white;
+    /* margin-top: 40px; */
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-top: 1px; 
+    padding-bottom: 1px;  
+    font-size: 1em; 
+}
+
+
+/* ///////////nav bar */
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-end; */
+    /* width: 33%; */
+    margin: 40px;
+    color: white;
+    
+
+}
+
+
+
+
+.navLogo{
+    margin-right: auto;
+    border: 3px solid white;
+    /* margin-top: 40px; */
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-top: 1px; 
+    padding-bottom: 1px;  
+    font-size: 1em; 
+}
+
+
+.navBar a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navBar a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(63, 28, 28, 0.705);
+   
+}
+
+.navBar a:active {
+    color: rgb(226, 226, 226);
+    
+}
+.navText{
+   font-size: 2em;
+   padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .navBar {
+      flex-direction: column;
+      justify-content: center;
+      margin: 10px;
+      
+    }
+    .navText{
+        font-size: 1.7em;
+        padding: 3px;
+        
+     }
+  }
+
+
+/* /////////// ABOUT  */
+
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items: center;
+    
+    margin: 20px;
+
+
+    
+}
+.aboutTextWrapper{
+    /* margin: 30px;
+    background-color: rgb(63, 28, 28, 0.705);
+    border: 1px solid black;
+    opacity: 0.3;
+    filter: alpha(opacity=60);      */    
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 50px;
+}
+.aboutText{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+
+}
+
+.aboutTitle{
+    
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 2.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ///////////search */
+.search{
+    display: flex;
+    
+    justify-content: center;
+    /* font-size: 4em; */
+    padding: 10px;
+    position: relative;
+}
+.searchInput{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: none;
+    outline: none;
+
+    background-image: url('assets/images/search-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: 10px 10px;
+    
+    padding: 12px 0px 12px 100px; 
+}
+.searchInput::placeholder{
+    color: rgb(134, 134, 134);
+}
+.searchIcon{
+    color: whitesmoke;
+    font-size: 4em;
+}
+
+@media only screen and (max-width: 750px) {
+    .searchInput {
+        font-size: 2em;
+        background-size: 50px; 
+        padding: 12px 0px 12px 80px; 
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .searchInput {
+        font-size: 1.6em;
+        background-size: 45px; 
+        padding: 12px 0px 12px 60px; 
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .searchInput {
+        font-size: 1.3em;
+        background-size: 40px; 
+        padding: 12px 0px 12px 60px; 
+    }
+  }
+
+
+/* ///////////results */
+.results{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: center;
+    margin: auto;
+    
+
+}
+
+.pairListItem{
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+    color: whitesmoke;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    /* font-family: 'Playfair Display', serif; */
+}
+.pairListItemText{
+    font-family: 'Open Sans', sans-serif;
+}
+.pairListItemDescription{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.473);
+}
+.pairList{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.pairListItemTitle{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ///////////edit form */
+
+
+.delete{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
+.deleteBtn{
+    font-size: 2em;
+}
+
+.editBtn{
+    font-size: 1.2em;
+    
+    
+}
+
+.editSubmit{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border: none;
+    font-size: 1.2em;
+    padding: 4px;
+}
+
+.editForm{
+    
+    
+}
+.editText{
+    width: 200px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.editTextPairings{
+    width: 250px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding: 5px;
+    word-wrap: break-word;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+textarea {
+    /* resize: none; */
+    outline: none;
+    overflow: auto;
+    
+  }
+
+.submitBtn {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: white;
+}
+
+
+
+/* /////////// ADD FORM */
+
+.addTextWrapper{
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.24);
+    padding-top: 50px;
+}
+.addText{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+.addForm{
+    width: 300px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1.3em;
+}
+.addForm::placeholder{
+    color: rgb(194, 194, 194);
+}
+
+.addFormTextBox{
+    width: 300px;
+    height: 80px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.addFormTextBox::placeholder{
+    color: rgb(194, 194, 194);
+}
+
+.addBtn{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* ///////////footer */
+
+.footer{
+    
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.527);
+    margin-top: 10%;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(63, 28, 28, 0.705);
+   
+}
+
+.footer a:active {
+    color: rgb(226, 226, 226);
+    
+}
